@@ -1,0 +1,23 @@
+.collect-main {
+  background-color: #f3f4f6;
+}
+
+.collect-main .collect-title {
+  padding: 40rpx 0;
+}
+
+.collect-main .collect-title__text {
+  padding: 15rpx;
+  border: 1rpx solid #ccc;
+  margin-left: 25rpx;
+  background-color: #fff;
+}
+
+.collect-main .collect-title__text--active {
+  color: var(--themeColor);
+  border-color: currentColor;
+}
+
+.collect-main .collect-content .navigator-bg {
+  background-color: #fff;
+}

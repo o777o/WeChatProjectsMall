@@ -1,0 +1,17 @@
+<Tabs tabs="{{ tabs }}" bindtabsItemChange="handleTabsItemChange">
+  <view class="collect-main">
+    <view class="collect-title">
+      <text class="collect-title__text collect-title__text--active">全部</text>
+      <text class="collect-title__text">正在热卖</text>
+      <text class="collect-title__text">即将上线</text>
+    </view>
+    <view class="collect-content">
+      <Goods 
+        wx:for="{{ collect }}" 
+        wx:key="goods_id" 
+        goods="{{ collect[index] }}" 
+        navigator-bg="navigator-bg"
+      ></Goods>
+    </view>
+  </view>
+</Tabs>

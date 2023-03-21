@@ -1,0 +1,9 @@
+var address = {
+  getAddress: function(address) {
+    return address.provinceName + address.cityName + address.countyName + address.detailInfo
+  }
+}
+
+module.exports = {
+  getAddress : address.getAddress
+}

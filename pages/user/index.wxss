@@ -1,0 +1,115 @@
+page {
+  background-color: #edece8;
+}
+
+.user .user-info-wrapper {
+  height: 45vh;
+  background-color: var(--themeColor);
+  overflow: hidden;
+  position: relative;
+}
+
+.user .user-info-wrapper .user-img {
+  position: relative;
+}
+
+.user .user-info-wrapper .user-img__image {
+  height: 50vh;
+  filter: blur(10rpx);
+}
+
+.user .user-info-wrapper .user-img .user-info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+
+.user .user-info-wrapper .user-img .user-info__image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.user .user-info-wrapper .user-img .user-info__text {
+  color: #fff;
+  margin-top: 40rpx;
+}
+
+.user .user-info-wrapper .user-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1rpx solid greenyellow;
+  color: greenyellow;
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+
+.user .user-content {
+  position: relative;
+}
+
+.user .user-content__main {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+  color: #666;
+  padding-bottom: 100rpx;
+}
+
+.user .user-content .main__item-wrapper {
+  display: flex;
+}
+
+.user .user-content .main__item-wrapper navigator {
+  flex: 1;
+  text-align: center;
+  padding: 15rpx 0;
+}
+
+.user .user-content .main__item-wrapper--bg {
+  background-color: #fff;
+}
+
+.user .user-content .main__item-wrapper--text {
+  margin-top: 30rpx;
+  padding: 20rpx;
+}
+
+.user .user-content .item-wrapper__num {
+  color: var(--themeColor);
+}
+
+.user .user-content .item-wrapper__icon {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+
+.user .user-content .orders {
+  margin-top: 30rpx;
+}
+
+.user .user-content .orders__title {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.user .user-content .app-info {
+  margin-top: 30rpx;
+}
+
+.user .user-content .app-info__item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.user .user-content .app-info__item--contact {
+  display: flex;
+  justify-content: space-between;
+}

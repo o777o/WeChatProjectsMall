@@ -1,0 +1,13 @@
+<!-- 搜索框 -->
+<SearchInput></SearchInput>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+	<block wx:if="{{tabs[0].isActive}}">
+		<Goods wx:for="{{goodsList}}"
+					 wx:key="goods_id"
+					 goods="{{goodsList[index]}}"
+		></Goods>
+	</block>
+	<block wx:elif="{{tabs[1].isActive}}">2</block>
+	<block wx:else="{{tabs[2].isActive}}">3</block>
+</Tabs>
+

@@ -1,0 +1,108 @@
+page {
+  background-color: #edece8;
+}
+.user {
+  .user-info-wrapper {
+    height: 45vh;
+    background-color: var(--themeColor);
+    overflow: hidden;
+    position: relative;
+    .user-img {
+      position: relative;
+      &__image {
+        height: 50vh;
+        // 高斯模糊
+        filter: blur(10rpx);
+      }
+      .user-info {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%;
+        text-align: center;
+        &__image {
+          width: 150rpx;
+          height: 150rpx;
+          border-radius: 50%;
+        }
+        &__text {
+          color: #fff;
+          margin-top: 40rpx;
+          // font-size: 40rpx;
+        }
+      }
+    }
+    .user-btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 40%;
+      border: 1rpx solid greenyellow;
+      color: greenyellow;
+      font-size: 38rpx;
+      padding: 30rpx;
+      border-radius: 10rpx;
+    }
+  }
+
+  .user-content {
+    position: relative;
+    &__main {
+      position: absolute;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -40rpx;
+      color: #666;
+      padding-bottom: 100rpx;
+    }
+
+    .main {
+      &__item-wrapper {
+        display: flex;
+        navigator {
+          flex: 1;
+          text-align: center;
+          padding: 15rpx 0;
+        }
+      }
+      &__item-wrapper--bg {
+        background-color: #fff;
+      }
+      &__item-wrapper--text {
+        margin-top: 30rpx;
+        padding: 20rpx;
+      }
+    }
+
+    .item-wrapper {
+      &__num {
+        color: var(--themeColor);
+      }
+      &__icon {
+        color: var(--themeColor);
+        font-size: 40rpx;
+      }
+    }
+
+    .orders {
+      margin-top: 30rpx;
+      &__title {
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+      }
+    }
+
+    .app-info {
+      margin-top: 30rpx;
+      &__item {
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+      }
+      &__item--contact {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
